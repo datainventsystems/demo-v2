@@ -1232,3 +1232,31 @@ textarea.field-input{ min-height:130px; resize:vertical; line-height:1.6; }
 
 .cases#cases .sf-cta{color:var(--brand-orange-light)}
 .cases#cases .sf-cta:hover{border-color:var(--brand-orange)}
+
+/* Client logo marquee — real logos */
+.marquee .client-ph{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:auto;
+  min-width:150px;
+  height:56px;
+  padding:0 26px;
+  background:none;
+  border:0;
+  color:transparent;
+  font-size:0;
+}
+.marquee .client-ph img{
+  max-height:38px;
+  width:auto;
+  max-width:150px;
+  object-fit:contain;
+  filter:grayscale(100%);
+  opacity:.55;
+  transition:filter .35s var(--ease),opacity .35s var(--ease);
+}
+.marquee .client-ph:hover img{
+  filter:grayscale(0%);
+  opacity:1;
+}
