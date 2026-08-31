@@ -85,16 +85,15 @@
   <div class="m-cta"><a class="prim" href="#demo">Book a Demo →</a></div>
 </div>
 
+<!-- ===== BEGIN HERO ===== -->
 <!-- HERO -->
-<section class="hero" id="top">
-  <svg class="hero-net" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><g id="netLinks" stroke="rgba(228,123,43,0.10)" stroke-width="0.6"></g><g id="netNodes" fill="rgba(228,123,43,0.35)"></g></svg>
-  <div class="float-badge" data-depth="0.12" style="top:20%; left:3%;"><div class="n">£2.1M</div><div class="l">Cost Saved</div></div>
-  <div class="float-badge" data-depth="0.18" style="top:16%; right:3%;"><div class="n">200+</div><div class="l">Clients</div></div>
-  <div class="float-badge" data-depth="0.2" style="bottom:18%; left:3%;"><div class="n">98%</div><div class="l">Retention</div></div>
-  <div class="float-badge" data-depth="0.14" style="bottom:15%; right:4%;"><div class="n">17yrs</div><div class="l">Experience</div></div>
+<section class="hero hero-flow-host" id="top">
+  <canvas id="heroFlow" aria-hidden="true"></canvas>
+  <div class="hero-scrim" aria-hidden="true"></div>
+
   <div class="wrap hero-grid">
     <div class="hero-copy">
-      <div class="hero-badge"><span class="dot"></span> Microsoft Solutions Partner · 17 Years</div>
+      <div class="hero-badge"><span class="dot"></span> FROM NOISE TO SIGNAL</div>
       <h1><span class="line"><span>Transform Finance,</span></span><span class="line"><span>Operations &amp;</span></span><span class="line"><span>Technology with</span></span><span class="line"><span class="accent">Microsoft Solutions</span></span></h1>
       <p class="hero-sub" data-reveal-sub>DataInvent helps CFOs, COOs, and IT Leaders cut through operational noise and turn complex data into clear, decisive business intelligence.</p>
       <div class="hero-actions" data-reveal-sub>
@@ -106,32 +105,28 @@
         <div><div class="stars">★★★★★</div><div class="trust-txt">200+ enterprise clients trust DataInvent</div></div>
       </div>
     </div>
-    <div class="dash">
-      <div class="dash-charts" data-depth="0.06">
-        <div class="glass chart" id="noiseChart">
-          <div class="chart-label" style="color:#9CA3AF;">NOISE</div>
-          <div class="bars"><div class="scanline"></div>
-            <div class="bar" style="--h:45%; background:var(--noise-red);"></div><div class="bar" style="--h:80%; background:var(--noise-amber);"></div><div class="bar" style="--h:60%; background:var(--noise-blue);"></div><div class="bar" style="--h:95%; background:var(--noise-rose);"></div><div class="bar" style="--h:50%; background:var(--noise-green);"></div><div class="bar" style="--h:74%; background:var(--noise-amber);"></div>
-          </div>
-          <div class="chart-foot"><span style="color:var(--noise-red);">✕ 14 reports</span><span style="color:var(--noise-amber);">⚠ Inconsistent</span></div>
-        </div>
-        <div class="dash-arrow"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></div>
-        <div class="glass signal chart" id="signalChart">
-          <div class="chart-label" style="color:var(--brand-orange);">SIGNAL</div>
-          <div class="bars"><div class="scanline"></div>
-            <div class="bar" style="--h:28%; background:var(--brand-orange); opacity:.55;"></div><div class="bar" style="--h:40%; background:var(--brand-orange); opacity:.65;"></div><div class="bar" style="--h:54%; background:var(--brand-orange); opacity:.75;"></div><div class="bar" style="--h:66%; background:var(--brand-orange); opacity:.85;"></div><div class="bar" style="--h:80%; background:var(--brand-orange); opacity:.92;"></div><div class="bar" style="--h:94%; background:var(--brand-orange);"></div>
-          </div>
-          <div class="signal-metrics"><div><div class="up">↑ 34%</div><div style="color:rgba(255,255,255,0.4);">Revenue</div></div><div><div class="up">↓ 18%</div><div style="color:rgba(255,255,255,0.4);">Cost</div></div><div><div class="up">▲ AA+</div><div style="color:rgba(255,255,255,0.4);">Risk</div></div></div>
-        </div>
-      </div>
-      <div class="kpis" data-depth="0.1">
-        <div class="glass kpi"><div class="val counter" data-target="2.1" data-dec="1" data-prefix="£" data-suffix="M">£2.1M</div><div class="lab">COST SAVED</div></div>
-        <div class="glass kpi"><div class="val counter" data-target="14" data-suffix=" wks">14 wks</div><div class="lab">TIME TO VALUE</div></div>
-        <div class="glass kpi"><div class="val counter" data-target="98" data-suffix="%" style="color:var(--green);">98%</div><div class="lab">RETENTION</div></div>
-      </div>
+  </div>
+
+  <div class="hero-outcomes" id="heroOutcomes">
+    <div class="oc" data-oc="0">
+      <div class="oc-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3v18h18"/><path d="M7 15l4-4 4 4 5-6"/></svg></div>
+      <div><div class="oc-t">Finance Clarity</div><div class="oc-d">Close faster. Report with confidence.</div></div>
+    </div>
+    <div class="oc" data-oc="1">
+      <div class="oc-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="6" r="2.4"/><circle cx="18" cy="6" r="2.4"/><circle cx="12" cy="18" r="2.4"/><path d="M7.6 7.7 10.7 16M16.4 7.7 13.3 16M8.4 6h7.2"/></svg></div>
+      <div><div class="oc-t">Connected Operations</div><div class="oc-d">One system. No silos.</div></div>
+    </div>
+    <div class="oc" data-oc="2">
+      <div class="oc-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3-1.7 5.2a2 2 0 0 1-1.1 1.1L4 11l5.2 1.7a2 2 0 0 1 1.1 1.1L12 19l1.7-5.2a2 2 0 0 1 1.1-1.1L20 11l-5.2-1.7a2 2 0 0 1-1.1-1.1z"/></svg></div>
+      <div><div class="oc-t">Data &amp; AI</div><div class="oc-d">Turn data into decisions.</div></div>
+    </div>
+    <div class="oc" data-oc="3">
+      <div class="oc-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7.5-3.6 7.5-9.2V5.4L12 2.6 4.5 5.4v6.4C4.5 17.4 12 21 12 21z"/><path d="m9.2 11.8 2 2 3.6-3.8"/></svg></div>
+      <div><div class="oc-t">Secure Foundation</div><div class="oc-d">Governed. Compliant. Scalable.</div></div>
     </div>
   </div>
 </section>
+<!-- ===== END HERO ===== -->
 
 <!-- AUTHORITY -->
 <section class="auth pad">
@@ -387,17 +382,11 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 <script src="js/main.js"></script>
+<script src="js/hero-flow.js"></script>
 
 <!-- ================= HOMEPAGE-ONLY SCRIPTS ================= -->
 <script>
   (function cloneMarquee(){ var track=document.getElementById('clientTrack'); if(!track) return; track.innerHTML=track.innerHTML+track.innerHTML; })();
-  (function heroNet(){
-    var nodes=[[180,200],[520,320],[900,180],[1320,300],[300,700],[780,640],[1280,720],[1080,420],[600,120]];
-    var links=[[0,1],[1,2],[2,3],[4,5],[5,6],[1,7],[7,3],[8,2],[0,8]];
-    var ng=document.getElementById('netNodes'), lg=document.getElementById('netLinks'); if(!ng) return;
-    links.forEach(function(l){ var a=nodes[l[0]],b=nodes[l[1]]; var ln=document.createElementNS('http://www.w3.org/2000/svg','line'); ln.setAttribute('x1',a[0]);ln.setAttribute('y1',a[1]);ln.setAttribute('x2',b[0]);ln.setAttribute('y2',b[1]); lg.appendChild(ln); });
-    nodes.forEach(function(n){ var c=document.createElementNS('http://www.w3.org/2000/svg','circle'); c.setAttribute('cx',n[0]);c.setAttribute('cy',n[1]);c.setAttribute('r',2.2); ng.appendChild(c); });
-  })();
   (function(){ var tabs=document.querySelectorAll('.sol-tab'); tabs.forEach(function(tab){ tab.addEventListener('click', function(){ tabs.forEach(function(t){ t.classList.remove('active'); }); tab.classList.add('active'); document.querySelectorAll('.sol-panel').forEach(function(p){ p.classList.remove('active'); }); var panel=document.getElementById('p-'+tab.getAttribute('data-sol')); if(panel) panel.classList.add('active'); }); }); })();
 </script>
 
@@ -475,11 +464,7 @@
   var tl=gsap.timeline({ defaults:{ ease:'power3.out' } });
   tl.from('.hero-badge',{ y:20, opacity:0, duration:0.7 })
     .from('.hero h1 .line > span',{ yPercent:110, duration:0.9, stagger:0.12 },'-=0.3')
-    .from('[data-reveal-sub]',{ y:24, opacity:0, duration:0.8, stagger:0.14 },'-=0.4')
-    .from('.dash',{ y:40, opacity:0, duration:1.0 },'-=0.9')
-    .from('.float-badge',{ opacity:0, scale:0.8, duration:0.8, stagger:0.1 },'-=0.6');
-  gsap.utils.toArray('.hero .bar').forEach(function(bar,i){ gsap.fromTo(bar,{ height:0 },{ height:bar.style.getPropertyValue('--h'), duration:0.9, delay:0.6+i*0.05, ease:'power2.out', onComplete:function(){ if(i===0) startLiveCharts(); } }); });
-  gsap.utils.toArray('.float-badge').forEach(function(b,i){ gsap.to(b,{ y:'+=10', duration:3+i*0.4, repeat:-1, yoyo:true, ease:'sine.inOut', delay:i*0.3 }); });
+    .from('[data-reveal-sub]',{ y:24, opacity:0, duration:0.8, stagger:0.14 },'-=0.4');  
   gsap.utils.toArray('.hero [data-depth]').forEach(function(el){ var d=parseFloat(el.getAttribute('data-depth')); gsap.to(el,{ yPercent:-d*100, ease:'none', scrollTrigger:{ trigger:'.hero', start:'top top', end:'bottom top', scrub:true } }); });
   gsap.utils.toArray('.leadgen [data-depth]').forEach(function(el){ var d=parseFloat(el.getAttribute('data-depth')); gsap.fromTo(el,{ yPercent:d*60 },{ yPercent:-d*60, ease:'none', scrollTrigger:{ trigger:'.leadgen', start:'top bottom', end:'bottom top', scrub:true } }); });
   function animateCounter(el){ var target=parseFloat(el.getAttribute('data-target')); var dec=parseInt(el.getAttribute('data-dec')||'0',10); var pre=el.getAttribute('data-prefix')||''; var suf=el.getAttribute('data-suffix')||''; var obj={v:0};
